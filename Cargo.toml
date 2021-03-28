@@ -1,0 +1,19 @@
+[package]
+name = "csv-payment-engine"
+version = "0.1.0"
+authors = ["Alexis Le Provost <alexis.leprovost@outlook.com>"]
+edition = "2018"
+default-run = "csv-payment-engine"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "csv-payment-engine"
+path = "src/main.rs"
+
+[dependencies]
+csv = "1.1.6"
+serde = { version = "1.0.125", features = ["derive"] }
+structopt = "0.3.21"
+thiserror = "1.0.24"
+anyhow = "1.0.40"
