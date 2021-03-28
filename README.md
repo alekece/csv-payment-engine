@@ -12,12 +12,15 @@ rustup update
 
 ## How to use it ?
 
-Simply run `cargo run --release -- <file.csv>`  and that's it !
+``` sh
+cargo run --release -- <file.csv>
+
+```
 
 ### Generate **fat** CSV file
 
 ``` sh
-cargo run --release --bin -- <number of CSV entries>
+cargo run --release --bin generator -- <number of CSV entries>
 ```
 
 ## Usage
